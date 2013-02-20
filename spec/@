@@ -1,0 +1,19 @@
+require 'spec_helper'
+
+describe "check title style gallery",  :type => :request do
+
+
+it "should show style gallery" do
+visit ('http://shopping-ecomm.demo.modcloth.com/style-gallery/')
+page.should have_selector("title", :content => "Style Gallery")
+#page.should have_selector(:content =>"#latest.active")
+sleep(5)
+save_and_open_page
+page.should have_css("l.filter.a.latest.active")
+find_by_id('latest')
+#first(:css, active)
+##page.should has_xpath?(:xpath, "//li[@id=loved']") 
+end 
+end 
+
+
