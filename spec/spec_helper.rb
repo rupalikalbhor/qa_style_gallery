@@ -4,6 +4,7 @@ require 'capybara/dsl'
 require 'capybara/rspec'
 require 'capybara_support/configuration'
 require 'selenium-webDriver'
+require 'spec/common_helper'
 
 RSpec.configure do |config|
   config.before(:all) do
