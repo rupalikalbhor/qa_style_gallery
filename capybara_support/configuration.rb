@@ -1,119 +1,72 @@
-#$: << File.expand_path(File.dirname(__FILE__) + "/../support")
-#$ROOT_PATH = File.expand_path(File.dirname(__FILE__))
-require 'capybara'
-require 'selenium-webDriver'
+require 'spec/spec_helper'
 
 module CapybaraSupport
   class Configuration
-    @default_env= :demo
+    @default_env = :demo     #This is default environment. If user do not pass any values from command prompt then this environment will be used.
+    @default_device = :desktop_chrome  #This is default device. It user do not pass any value from command prompt then this device will be used.
 
+    #This function will reset the capybara
     def self.reset_capybara
       Capybara.reset!
-      Capybara.current_driver= Capybara.default_driver
-      Capybara.javascript_driver= Capybara.default_driver
       Capybara.default_wait_time=10
       Capybara.server_boot_timeout = 30
       Capybara.default_selector =:css
       Capybara.ignore_hidden_elements =false
     end
 
-    def self.configure_env
+    # This function will configure the capybara
+    def self.configure_environment
+      #$device_name = ENV.fetch('DEVICE_NAME', @default_device).to_sym
+      @environment = ENV.fetch('ENV_NAME', @default_env).to_sym #This will set environment value from command prompt
+      @device = ENV.fetch('DEVICE_NAME', @default_device).to_sym #This will set device value from command prompt
 
-    Capybara.run_server=false
-      Capybara.app_host = 'http://shopping-ecomm.demo.modcloth.com'
-      Capybara.default_driver= :selenium_iphone   #This is registered driver in get_browser method
-      self.get_browser
+      Capybara.app_host = self.get_environment_url
+      Capybara.javascript_driver= Capybara.default_driver
+      Capybara.default_driver= :device_driver
+      self.register_driver
+      puts "Running on environment: #{@environment}"
+      puts "Running on device: #{@device}"
     end
 
-    def self.get_browser
-      #puts "Android"
-      #Capybara.register_driver :selenium_android do |app|
-      #
-      #
-      #  Capybara::Selenium::Driver.new(app,:browser => :remote, :url => 'http://127.0.0.1:8080/wd/hub')
-
-            puts "Selenium iphone on simulator"
-        Capybara.register_driver :selenium_iphone do |app|
-          Capybara::Selenium::Driver.new(app, :browser => :remote, :url => 'http://localhost:3001/wd/hub/',:desired_capabilities => :iphone)
-
-    #  puts "Selenium ipad on simulator"
-    #  Capybara.register_driver :selenium_iphone do |app|
-    #  Capybara::Selenium::Driver.new(app, :browser => :remote, :url => 'http://ipaddress of local host :3001/wd/hub',:desired_capabilities => :ipad)
-    #
-    #  puts "Safari browser"
-    #  Capybara.register_driver :selenium_iphone do |app|
-    #  Capybara::Selenium::Driver.new(app, :browser => :safari, :url => 'http://ipaddress of local host :3001/wd/hub')
-    #
-    #  puts "Firefox or Chrome browser"
-    #  Capybara.register_driver :selenium_iphone do |app|
-    #  Capybara::Selenium::Driver.new(app, :browser => :firefox)
-    #
-
+    #This function will return environment url
+    def self.get_environment_url
+      case @environment
+        when :demo
+          'http://social2-ecomm.demo.modcloth.com'
+        when :stage
+          'http://www.stage.modcloth.com'
+        when :production
+          'http://www.modcloth.com'
+      end
     end
+
+    #This function will register driver for following devices
+      #desktop_chrome - On desktop device with chrome broswer
+      #desktop_firefox - On desktop device with firefox browser.
+      #mobile_iphone - On iPhone mobile device
+      #tablet_ipad - On iPad tablet device
+    def self.register_driver()
+      case @device
+        when :desktop_chrome     #For Chrome browser on desktop
+          Capybara.register_driver :device_driver do |app|
+            Capybara::Selenium::Driver.new(app, :browser => :chrome)
+          end
+
+        when :desktop_firefox    #For Firefox browser on desktop
+          Capybara.register_driver :device_driver do |app|
+            Capybara::Selenium::Driver.new(app, :browser => :firefox)
+          end
+
+        when :mobile_iphone      #For iphone mobile
+          Capybara.register_driver :device_driver do |app|
+            Capybara::Selenium::Driver.new(app, :browser => :remote, :url => 'http://localhost:3001/wd/hub/', :desired_capabilities => :iphone)
+          end
+
+        when :tablet_ipad        # For ipad tablet
+          Capybara.register_driver :device_driver do |app|
+            Capybara::Selenium::Driver.new(app, :browser => :remote, :url => 'http://localhost:3001/wd/hub/', :desired_capabilities => :ipad)
+          end
+      end
     end
   end
 end
-
-#  module CapybaraSupport
-#  class Configuration
-#    @default_env= :demo
-#    #@default_browser = :firefox
-#    #@default_device= :iphone
-#    #@default_driver= :selenium_iphone
-#
-#    def self.reset_capybara
-#      Capybara.reset!
-#      Capybara.current_driver= Capybara.default_driver
-#      Capybara.javascript_driver= Capybara.default_driver
-#      Capybara.default_wait_time=10
-#      Capybara.server_boot_timeout = 30
-#      Capybara.default_selector =:css
-#      Capybara.ignore_hidden_elements =false
-#    end
-#
-#    def self.get_browser
-#      #     case @browser_name
-#      #        when :firefox
-#      #          puts "Running tests using FIREFOX browser"
-#      #          profile = Selenium::WebDriver::Firefox::Profile.new
-#      #         profile.assume_untrusted_certificate_issuer = false
-#      #          Capybara.register_driver :selenium do |app|
-#      #            Capybara::Selenium::Driver.new(app, :profile => profile)
-#      #
-#      #
-#      #        end
-#      #when :chrome
-#      #  Capybara.register_driver :selenium do |app|
-#      #             args = []
-#      #              #args << "--window-size=320,480"
-#      #              # you can also set the user agent
-#      #                args << "--user-agent='Mozilla/5.0 (iPhone; CPU iPhone OS 5_0 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9A334 Safari/7534.48.3'"
-#      #        end
-#      #                 Capybara::Selenium::Driver.new(app, :browser => :chrome, :args => args)
-#      #    end
-#      #
-#      #    when:iphone
-#      Capybara.register_driver :selenium_iphone do |app|
-#        Capybara::Selenium::Driver.new(app, :browser => :remote, :url => 'http://10.3.10.92:3001/wd/hub/', :desired_capabilities => :iphone)
-#      end
-#      #@driver = Selenium::Driver.new(:browser => :remote, :url => 'http://10.3.30.92:3001/wd/hub', :desired_capabilities => :iphone)
-#      #@driver = Selenium::WebDriver.for :chrome
-#      #@base_url = "http://www.google.com/"
-#      @driver.manage.timeouts.implicit_wait = 30
-#      @verification_errors = []
-#    end
-#
-#
-#    run_server=true
-#    Capybara.app_host = 'http://shopping-ecomm.demo.modcloth.com'
-#    Capybara.default_driver = :selenium
-#    #self.get_browser
-#    #driver = Selenium::Webdriver.for :firefox , :profile =>profile
-#    #Capybara.default_driver = :selenium
-#    #Capybara.default_selector = :css
-#  end
-#
-#end
-#
-#
-

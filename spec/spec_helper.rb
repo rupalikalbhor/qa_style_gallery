@@ -6,11 +6,9 @@ require 'capybara_support/configuration'
 require 'selenium-webDriver'
 
 RSpec.configure do |config|
-
   config.before(:all) do
     CapybaraSupport::Configuration.reset_capybara
-    puts "capybara reset"
   end
   config.include Capybara::DSL
-  CapybaraSupport::Configuration.configure_env
+  CapybaraSupport::Configuration.configure_environment
 end
