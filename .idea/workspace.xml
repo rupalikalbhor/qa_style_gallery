@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/tablet_site/tab_browse_style_gallery.rb" afterPath="$PROJECT_DIR$/spec/tablet_site/tab_browse_style_gallery.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/mobile_site/browse_style_gallery_spec.rb" afterPath="$PROJECT_DIR$/spec/mobile_site/browse_style_gallery_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="qa_style_gallery.iws" />
@@ -36,19 +36,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="mob_browse_style_gallery_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/mobile_site/mob_browse_style_gallery_spec.rb">
+      <file leaf-file-name="browse_style_gallery_spec.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spec/mobile_site/browse_style_gallery_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="5" selection-start="792" selection-end="792" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tab_browse_style_gallery.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spec/tablet_site/tab_browse_style_gallery.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="27" selection-start="1343" selection-end="1343" vertical-scroll-proportion="0.6545454">
+            <state line="27" column="12" selection-start="1139" selection-end="1139" vertical-scroll-proportion="0.74585634">
               <folding />
             </state>
           </provider>
@@ -79,17 +70,17 @@
         <option value="$PROJECT_DIR$/capybara_support/configuration.rb" />
         <option value="$PROJECT_DIR$/spec/common_helper.rb" />
         <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
-        <option value="$PROJECT_DIR$/spec/mobile_site/browse_style_gallery_spec.rb" />
         <option value="$PROJECT_DIR$/spec/desktop_site/page_title" />
         <option value="$PROJECT_DIR$/spec/desktop_site/desk_browse_style_gallery_spec.rb" />
         <option value="$PROJECT_DIR$/spec/tablet_site/tab_browse_style_gallery.rb" />
+        <option value="$PROJECT_DIR$/spec/mobile_site/browse_style_gallery_spec.rb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1280" />
-    <option name="height" value="686" />
+    <option name="height" value="679" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -164,7 +155,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tablet_site" />
+              <option name="myItemId" value="mobile_site" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -182,7 +173,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mobile_site" />
+              <option name="myItemId" value="desktop_site" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -350,23 +341,6 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration" maxAnnotateRevisions="500">
-    <option name="USER" value="" />
-    <option name="PASSWORD" value="" />
-    <option name="mySSHConnectionTimeout" value="30000" />
-    <option name="mySSHReadTimeout" value="30000" />
-    <option name="LAST_MERGED_REVISION" />
-    <option name="MERGE_DRY_RUN" value="false" />
-    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
-    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
-    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
-    <option name="DETECT_NESTED_COPIES" value="true" />
-    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
-    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
-    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
-    <option name="FORCE_UPDATE" value="false" />
-    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" name="Default" comment="" />
@@ -376,14 +350,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="686" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="22" width="1280" height="679" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28119937" sideWeight="0.3181049" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28119937" sideWeight="0.67005074" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28119937" sideWeight="0.31678084" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28119937" sideWeight="0.66952056" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -521,13 +495,6 @@
         <state line="2" column="33" selection-start="155" selection-end="155" vertical-scroll-proportion="0.026455026" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/desktop_site/desk_browse_style_gallery_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="47" selection-start="81" selection-end="81" vertical-scroll-proportion="0.08122744">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/capybara_support/configuration.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="73" selection-start="672" selection-end="672" vertical-scroll-proportion="0.027075812">
@@ -549,16 +516,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/mobile_site/mob_browse_style_gallery_spec.rb">
+    <entry file="file://$PROJECT_DIR$/spec/mobile_site/browse_style_gallery_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="5" selection-start="792" selection-end="792" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/tablet_site/tab_browse_style_gallery.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="27" selection-start="1343" selection-end="1343" vertical-scroll-proportion="0.6545454">
+        <state line="27" column="12" selection-start="1139" selection-end="1139" vertical-scroll-proportion="0.74585634">
           <folding />
         </state>
       </provider>
