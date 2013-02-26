@@ -22,7 +22,12 @@ describe 'Browse style gallery' do
 
   it 'Verify "Featured" tab contains outfit and it is not blank.' do
     page.find('#featured').click
-    page.find(:xpath, "//div[@id = 'gallery']/div[@class='outfits columns-1']/div[1]/a/img[contains(@alt,'Open Outfit Link')]")
+    page.find(:xpath, "//div[@id = 'gallery']/div[@class='outfits columns-2']/div[1]/a/img[contains(@alt,'Open Outfit Link')]")
+  end
+
+  it 'Verify "Latest" tab is not blank' do
+    page.find('#latest').click
+    page.find(:xpath, "//div[@id = 'gallery']/div[@class='outfits columns-2']/div[1]/a/img[contains(@alt,'Open Outfit Link')]")
   end
 end
 
