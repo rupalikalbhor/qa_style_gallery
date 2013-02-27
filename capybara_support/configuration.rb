@@ -3,7 +3,7 @@ require 'spec/spec_helper'
 module CapybaraSupport
   class Configuration
     @default_env = :demo     #This is default environment. If user do not pass any values from command prompt then this environment will be used.
-    @default_device = :mobile_iphone  #This is default device. It user do not pass any value from command prompt then this device will be used.
+    @default_device = :desktop_chrome  #This is default device. It user do not pass any value from command prompt then this device will be used.
 
     #This function will reset the capybara
     def self.reset_capybara
@@ -12,6 +12,7 @@ module CapybaraSupport
       Capybara.server_boot_timeout = 30
       Capybara.default_selector =:css
       Capybara.ignore_hidden_elements =false
+      Capybara.javascript_driver= Capybara.default_driver
     end
 
     # This function will configure the capybara
@@ -21,8 +22,9 @@ module CapybaraSupport
       @device = ENV.fetch('DEVICE_NAME', @default_device).to_sym #This will set device value from command prompt
 
       Capybara.app_host = self.get_environment_url
-      Capybara.javascript_driver= Capybara.default_driver
+
       Capybara.default_driver= :device_driver
+
       self.register_driver
       puts "Running on environment: #{@environment}"
       puts "Running on device: #{@device}"

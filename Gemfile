@@ -10,5 +10,6 @@ gem 'capybara-screenshot'
 gem 'postgres-pr'
 gem 'launchy'
 gem 'magic_encoding'
+gem 'database_cleaner'
 $: << File.dirname(__FILE__)
 

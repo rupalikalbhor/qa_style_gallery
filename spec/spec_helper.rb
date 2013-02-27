@@ -5,6 +5,7 @@ require 'capybara/rspec'
 require 'capybara_support/configuration'
 require 'selenium-webDriver'
 require 'spec/common_helper'
+require 'database_cleaner'
 
 RSpec.configure do |config|
   config.before(:all) do
@@ -12,4 +13,17 @@ RSpec.configure do |config|
   end
   config.include Capybara::DSL
   CapybaraSupport::Configuration.configure_environment
+
+  #config.before(:suite) do
+  #  DatabaseCleaner.strategy = :transaction
+  #  DatabaseCleaner.clean_with(:truncation)
+  #end
+  #
+  #config.before(:each) do
+  #  DatabaseCleaner.start
+  #end
+  #
+  #config.after(:each) do
+  #  DatabaseCleaner.clean
+  #end
 end
