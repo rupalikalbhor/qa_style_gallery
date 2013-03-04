@@ -5,6 +5,10 @@ describe 'Browse style gallery' do
     go_to_style_gallery_page
   end
 
+  it 'Verify style gallery banner' do
+    page.find(:xpath, '//div[@id = "style-exchange-banner"]/img[@alt = "Style Gallery"]')
+  end
+
   it 'Verify one column layout', :type => :request do
     page.find(:xpath, "//div[@id = 'gallery']/div/div[1][contains(@style,'left: 0px;')]")
     page.find(:xpath, "//div[@id = 'gallery']/div/div[2][contains(@style,'left: 0px;')]")
@@ -50,8 +54,8 @@ describe 'Browse style gallery' do
       page.find_link('All Time')
       page.find_link('This Week')
       page.find_link('Today')
-
-      page.should have_css("a#week.active")
+      page.should have_css('a#week.active')
     end
   end
+
 end

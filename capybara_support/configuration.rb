@@ -12,22 +12,19 @@ module CapybaraSupport
       Capybara.server_boot_timeout = 30
       Capybara.default_selector =:css
       Capybara.ignore_hidden_elements =false
-      Capybara.javascript_driver= Capybara.default_driver
     end
 
     # This function will configure the capybara
     def self.configure_environment
-      #$device_name = ENV.fetch('DEVICE_NAME', @default_device).to_sym
       @environment = ENV.fetch('ENV_NAME', @default_env).to_sym #This will set environment value from command prompt
-      @device = ENV.fetch('DEVICE_NAME', @default_device).to_sym #This will set device value from command prompt
-
+      $device = ENV.fetch('DEVICE_NAME', @default_device).to_sym #This will set device value from command prompt
       Capybara.app_host = self.get_environment_url
-
       Capybara.default_driver= :device_driver
-
+      Capybara.javascript_driver= Capybara.default_driver
       self.register_driver
+      Capybara.current_session.driver.browser.manage.window.maximize
       puts "Running on environment: #{@environment}"
-      puts "Running on device: #{@device}"
+      puts "Running on device: #{$device}"
     end
 
     #This function will return environment url
@@ -48,7 +45,7 @@ module CapybaraSupport
       #mobile_iphone - On iPhone mobile device
       #tablet_ipad - On iPad tablet device
     def self.register_driver()
-      case @device
+      case $device
         when :desktop_chrome     #For Chrome browser on desktop
           Capybara.register_driver :device_driver do |app|
             Capybara::Selenium::Driver.new(app, :browser => :chrome)
