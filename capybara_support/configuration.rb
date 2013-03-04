@@ -3,7 +3,7 @@ require 'spec/spec_helper'
 module CapybaraSupport
   class Configuration
     @default_env = :demo     #This is default environment. If user do not pass any values from command prompt then this environment will be used.
-    @default_device = :desktop_chrome  #This is default device. It user do not pass any value from command prompt then this device will be used.
+    @default_device = :mobile_iphone  #This is default device. It user do not pass any value from command prompt then this device will be used.
 
     #This function will reset the capybara
     def self.reset_capybara

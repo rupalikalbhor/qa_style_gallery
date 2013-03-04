@@ -1,6 +1,6 @@
 require 'spec/spec_helper'
 
-describe 'Browse style gallery' do
+describe 'Browse style gallery on desktop' do
   before(:each) do
     go_to_style_gallery_page
   end
