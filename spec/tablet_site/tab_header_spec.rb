@@ -1,6 +1,6 @@
 require 'spec/spec_helper'
 
-describe 'Desktop header' do
+describe 'Tablet header' do
   before(:all) do
     go_to_style_gallery_page
   end

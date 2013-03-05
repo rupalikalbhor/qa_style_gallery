@@ -6,6 +6,7 @@ require 'capybara_support/configuration'
 require 'selenium-webDriver'
 require 'support/common_helper'
 require 'support/data_helper'
+require 'database_support/database_helper'
 
 RSpec.configure do |config|
   config.before(:all) do

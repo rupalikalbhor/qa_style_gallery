@@ -3,7 +3,7 @@ require 'spec/spec_helper'
 module CapybaraSupport
   class Configuration
     @default_env = :demo     #This is default environment. If user do not pass any values from command prompt then this environment will be used.
-    @default_device = :mobile_iphone  #This is default device. It user do not pass any value from command prompt then this device will be used.
+    @default_device = :desktop_chrome  #This is default device. It user do not pass any value from command prompt then this device will be used.
 
     #This function will reset the capybara
     def self.reset_capybara
@@ -16,20 +16,20 @@ module CapybaraSupport
 
     # This function will configure the capybara
     def self.configure_environment
-      @environment = ENV.fetch('ENV_NAME', @default_env).to_sym #This will set environment value from command prompt
+      $environment = ENV.fetch('ENV_NAME', @default_env).to_sym #This will set environment value from command prompt
       $device = ENV.fetch('DEVICE_NAME', @default_device).to_sym #This will set device value from command prompt
       Capybara.app_host = self.get_environment_url
       Capybara.default_driver= :device_driver
       Capybara.javascript_driver= Capybara.default_driver
       self.register_driver
       Capybara.current_session.driver.browser.manage.window.maximize
-      puts "Running on environment: #{@environment}"
+      puts "Running on environment: #{$environment}"
       puts "Running on device: #{$device}"
     end
 
     #This function will return environment url
     def self.get_environment_url
-      case @environment
+      case $environment
         when :demo
           'http://shopping-ecomm.demo.modcloth.com'
         when :stage

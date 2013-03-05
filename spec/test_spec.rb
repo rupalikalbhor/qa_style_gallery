@@ -7,7 +7,6 @@ describe 'Browse style gallery' do
   end
 
   it 'test' do
-    join
-    sign_out
+    connection(:query_name => :UserDetails)
   end
 end
