@@ -1,7 +1,7 @@
 require 'postgres'
 
-def connection(options)
-  query_name = options[:query_name] || :UserDetails
+def connection(query_name)
+  query_name = query_name[:query_name] || :UserDetails
 
   get_environment()
   @port_number = 5432
@@ -124,3 +124,6 @@ def query_result(query_name, res)
       return value
   end
 end
+
+
+

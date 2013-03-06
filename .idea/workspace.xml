@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/query_helper.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chromedriver.log" afterPath="$PROJECT_DIR$/chromedriver.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database_support/database_helper.rb" afterPath="$PROJECT_DIR$/database_support/database_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/test_spec.rb" afterPath="$PROJECT_DIR$/spec/test_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/support/query_helper.rb" afterPath="$PROJECT_DIR$/spec/support/query_helper.rb" />
     </list>
     <ignored path="qa_style_gallery.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,7 +24,8 @@
     <file path="/desk_header_spec.rb" changelist="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" time="1362431773015" ignored="false" />
     <file path="/mob_header_spec.rb" changelist="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" time="1362432130399" ignored="false" />
     <file path="/tab_header_spec.rb" changelist="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" time="1362443595035" ignored="false" />
-    <file path="/database_helper.rb" changelist="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" time="1362607026551" ignored="false" />
+    <file path="/database_helper.rb" changelist="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" time="1362608311360" ignored="false" />
+    <file path="/query_helper.rb" changelist="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" time="1362608421296" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,10 +48,9 @@
       <file leaf-file-name="database_helper.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/database_support/database_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="32" selection-start="945" selection-end="945" vertical-scroll-proportion="0.6893382">
+            <state line="56" column="35" selection-start="1327" selection-end="1327" vertical-scroll-proportion="0.5480226">
               <folding>
-                <element signature="n#get_environment#0;n#!!top" expanded="false" />
-                <element signature="n#query_collection#0;n#!!top" expanded="false" />
+                <element signature="e#442#909#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -61,7 +59,7 @@
       <file leaf-file-name="query_helper.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/support/query_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="1" column="143" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -79,7 +77,7 @@
       <file leaf-file-name="test_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/test_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="30" selection-start="681" selection-end="681" vertical-scroll-proportion="0.0">
+            <state line="9" column="146" selection-start="169" selection-end="310" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -112,7 +110,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/spec/mobile_site/browse_style_gallery_spec.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/spec/common_helper.rb" />
         <option value="$PROJECT_DIR$/spec/support/data_helper.rb" />
@@ -127,6 +124,7 @@
         <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
         <option value="$PROJECT_DIR$/capybara_support/configuration.rb" />
         <option value="$PROJECT_DIR$/spec/test_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/support/query_helper.rb" />
         <option value="$PROJECT_DIR$/database_support/database_helper.rb" />
       </list>
     </option>
@@ -542,23 +540,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/support/query_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="57" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/test_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="30" selection-start="681" selection-end="681" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -570,12 +554,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/spec/test_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="146" selection-start="169" selection-end="310" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/support/query_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="143" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/database_support/database_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="32" selection-start="945" selection-end="945" vertical-scroll-proportion="0.6893382">
+        <state line="56" column="35" selection-start="1327" selection-end="1327" vertical-scroll-proportion="0.5480226">
           <folding>
-            <element signature="n#get_environment#0;n#!!top" expanded="false" />
-            <element signature="n#query_collection#0;n#!!top" expanded="false" />
+            <element signature="e#442#909#0" expanded="false" />
           </folding>
         </state>
       </provider>

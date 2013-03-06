@@ -1,5 +1,5 @@
 [0.000][INFO]:      ChromeDriver 26.0.1383.0 /usr/bin/chromedriver
-[0.213][FINE]:      Initializing session with capabilities {
+[0.209][FINE]:      Initializing session with capabilities {
    "browserName": "chrome",
    "chrome.detach": true,
    "chromeOptions": {
@@ -14,11 +14,11 @@
    "version": ""
 }
 
-[0.214][INFO]:      Using named testing interface
-[1.222][INFO]:      Connected to Chrome successfully. Version: 25.0.1364.99
-[1.251][FINE]:      Command received (/session/cf8991d77d92faef8d3ec360b6462895)
-[1.251][FINE]:      Command finished (/session/cf8991d77d92faef8d3ec360b6462895) with response {
-   "sessionId": "cf8991d77d92faef8d3ec360b6462895",
+[0.211][INFO]:      Using named testing interface
+[1.004][INFO]:      Connected to Chrome successfully. Version: 25.0.1364.99
+[1.070][FINE]:      Command received (/session/fb21afb50cf2fd0f080b09396045c455)
+[1.070][FINE]:      Command finished (/session/fb21afb50cf2fd0f080b09396045c455) with response {
+   "sessionId": "fb21afb50cf2fd0f080b09396045c455",
    "status": 0,
    "value": {
       "acceptSslCerts": false,
@@ -40,66 +40,66 @@
    }
 }
 
-[1.259][FINE]:      Command received (/session/cf8991d77d92faef8d3ec360b6462895/window/current/maximize) with params {
+[1.075][FINE]:      Command received (/session/fb21afb50cf2fd0f080b09396045c455/window/current/maximize) with params {
 
 }
 
-[1.259][FINER]:     Waiting for all views to stop loading...
-[1.259][FINER]:     Done waiting for all views to stop loading
-[1.398][FINER]:     Waiting for all views to stop loading...
-[1.403][FINER]:     Done waiting for all views to stop loading
-[1.403][FINE]:      Command finished (/session/cf8991d77d92faef8d3ec360b6462895/window/current/maximize) with response {
-   "sessionId": "cf8991d77d92faef8d3ec360b6462895",
+[1.075][FINER]:     Waiting for all views to stop loading...
+[1.076][FINER]:     Done waiting for all views to stop loading
+[1.213][FINER]:     Waiting for all views to stop loading...
+[1.219][FINER]:     Done waiting for all views to stop loading
+[1.219][FINE]:      Command finished (/session/fb21afb50cf2fd0f080b09396045c455/window/current/maximize) with response {
+   "sessionId": "fb21afb50cf2fd0f080b09396045c455",
    "status": 0,
    "value": {
 
    }
 }
 
-[1.433][FINE]:      Command received (/session/cf8991d77d92faef8d3ec360b6462895/cookie)
-[1.433][FINER]:     Waiting for all views to stop loading...
-[1.453][FINER]:     Done waiting for all views to stop loading
-[1.466][FINER]:     Waiting for all views to stop loading...
-[1.467][FINER]:     Done waiting for all views to stop loading
-[1.467][FINE]:      Command finished (/session/cf8991d77d92faef8d3ec360b6462895/cookie) with response {
-   "sessionId": "cf8991d77d92faef8d3ec360b6462895",
+[1.265][FINE]:      Command received (/session/fb21afb50cf2fd0f080b09396045c455/cookie)
+[1.265][FINER]:     Waiting for all views to stop loading...
+[1.266][FINER]:     Done waiting for all views to stop loading
+[1.286][FINER]:     Waiting for all views to stop loading...
+[1.313][FINER]:     Done waiting for all views to stop loading
+[1.314][FINE]:      Command finished (/session/fb21afb50cf2fd0f080b09396045c455/cookie) with response {
+   "sessionId": "fb21afb50cf2fd0f080b09396045c455",
    "status": 0,
    "value": {
 
    }
 }
 
-[1.469][FINE]:      Command received (/session/cf8991d77d92faef8d3ec360b6462895/url) with params {
+[1.315][FINE]:      Command received (/session/fb21afb50cf2fd0f080b09396045c455/url) with params {
    "url": "about:blank"
 }
 
-[1.469][FINER]:     Waiting for all views to stop loading...
-[1.469][FINER]:     Done waiting for all views to stop loading
-[1.487][FINER]:     Waiting for all views to stop loading...
-[1.532][FINER]:     Done waiting for all views to stop loading
-[1.532][FINE]:      Command finished (/session/cf8991d77d92faef8d3ec360b6462895/url) with response {
-   "sessionId": "cf8991d77d92faef8d3ec360b6462895",
+[1.315][FINER]:     Waiting for all views to stop loading...
+[1.316][FINER]:     Done waiting for all views to stop loading
+[1.339][FINER]:     Waiting for all views to stop loading...
+[1.368][FINER]:     Done waiting for all views to stop loading
+[1.368][FINE]:      Command finished (/session/fb21afb50cf2fd0f080b09396045c455/url) with response {
+   "sessionId": "fb21afb50cf2fd0f080b09396045c455",
    "status": 0,
    "value": {
 
    }
 }
 
-[1.534][FINE]:      Command received (/session/cf8991d77d92faef8d3ec360b6462895/url) with params {
+[1.370][FINE]:      Command received (/session/fb21afb50cf2fd0f080b09396045c455/url) with params {
    "url": "http://shopping-ecomm.demo.modcloth.com/style-gallery"
 }
 
-[1.534][FINER]:     Waiting for all views to stop loading...
-[1.534][FINER]:     Done waiting for all views to stop loading
-[20.144][FINER]:    Waiting for all views to stop loading...
-[20.149][FINER]:    Done waiting for all views to stop loading
-[20.149][FINE]:     Command finished (/session/cf8991d77d92faef8d3ec360b6462895/url) with response {
-   "sessionId": "cf8991d77d92faef8d3ec360b6462895",
+[1.370][FINER]:     Waiting for all views to stop loading...
+[1.370][FINER]:     Done waiting for all views to stop loading
+[10.988][FINER]:    Waiting for all views to stop loading...
+[10.989][FINER]:    Done waiting for all views to stop loading
+[10.989][FINE]:     Command finished (/session/fb21afb50cf2fd0f080b09396045c455/url) with response {
+   "sessionId": "fb21afb50cf2fd0f080b09396045c455",
    "status": 0,
    "value": {
 
    }
 }
 
-[20.919][FINE]:     Command received (/session/cf8991d77d92faef8d3ec360b6462895)
-[21.108][INFO]:     Chrome shutdown
+[11.552][FINE]:     Command received (/session/fb21afb50cf2fd0f080b09396045c455)
+[11.830][INFO]:     Chrome shutdown
