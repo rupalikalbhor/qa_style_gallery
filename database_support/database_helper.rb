@@ -1,5 +1,4 @@
 require 'postgres'
-require 'capybara_support/configuration'
 
 def connection(options)
   query_name = options[:query_name] || :UserDetails
@@ -44,22 +43,55 @@ def get_environment
       @user_name = 'postgres'
       @password = '6VrgPkuImN9bGP9ztIhO'
   end
-  #@url = CapybaraSupport::Configuration.get_environment_url
 end
 
 private
 def query_collection(query_name)
   case query_name
-    when :UserDetails
-      puts "running sql"
-      sql = "SELECT id, created_at, updated_at, firstname, lastname, email, personal_website_url
-             FROM cached_accounts where email = 'r.kalbhor@modcloth.com'"
+    when :latest_tab_outfit_details
+      sql = "select o.id, o.loves_count, o.moderated_at, ca.firstname, ca.lastname, ca.personal_website_url
+             FROM outfits o FULL OUTER JOIN cached_accounts ca
+             ON o.account_id = ca.id
+             WHERE o.state= 'approved' Order by o.moderated_at DESC limit 1"
 
-    #when :Voting_in_progress_SampleCount
-    #  sql = "SELECT count(*)
-    #         FROM samples
-    #         WHERE state ='active' AND (voting_starts_at <= now() AND voting_ends_at > now())"
-    #
+    when :featured_tab_outfit_details
+      sql = "select o.id, o.loves_count, o.moderated_at, ca.firstname, ca.lastname, ca.personal_website_url
+             FROM outfits o FULL OUTER JOIN cached_accounts ca
+             ON o.account_id = ca.id
+             WHERE o.state= 'approved'
+             AND o.featured = 't' Order by o.moderated_at DESC limit 1"
+
+    when :most_loved_All_time_tab_outfit_details
+      sql = "select o.id, o.loves_count, o.moderated_at, ca.firstname, ca.lastname, ca.personal_website_url
+             FROM outfits o FULL OUTER JOIN cached_accounts ca
+             ON o.account_id = ca.id
+             WHERE o.state= 'approved'
+             Order by o.loves_count DESC, o.moderated_at DESC limit 1"
+
+    when :most_loved_This_week_outfit_details
+      sql = "select o.id, age(current_timestamp, o.moderated_at), o.loves_count, ca.firstname, ca.lastname, ca.personal_website_url
+            FROM outfits o FULL OUTER JOIN cached_accounts ca
+            ON o.account_id = ca.id
+            WHERE o.state= 'approved'
+            AND o.loves_count >=1 and age(o.moderated_at) < '7 days 00:00:00.000000' limit 1"
+
+    when :most_loved_Today_outfit_details
+      sql = "select o.id, age(current_timestamp, o.moderated_at), o.loves_count, ca.firstname, ca.lastname, ca.personal_website_url
+            FROM outfits o FULL OUTER JOIN cached_accounts ca
+            ON o.account_id = ca.id
+            WHERE o.loves_count >=1 and age(current_timestamp, o.moderated_at) < '24:00:00.000000'"
+
+    #when :UserDetails
+    #  sql = "select o.id, o.loves_count, o.moderated_at, ca.firstname, ca.lastname, ca.personal_website_url
+    #  FROM outfits o FULL OUTER JOIN cached_accounts ca
+    #  ON o.account_id = ca.id
+    #  WHERE o.account_id  = ca.id and o.id = 141"
+
+    when :OutfitDetailPage
+      sql = "select o.id, o.loves_count, o.moderated_at, oi.product_id, oi.pictured
+      FROM outfits o FULL OUTER JOIN outfit_items oi
+      ON o.id = oi.outfit_id
+      WHERE o.id  = oi.outfit_id and o.id = 141"
 
     else
       print "\n No matching query..Please check your typos.... \n"
@@ -71,22 +103,22 @@ end
 private
 def query_result(query_name, res)
   case query_name
-    when :UserDetails
-      id = res.getvalue(0, 0)
-      created_date = res.getvalue(0, 1)
-      updated_at = res.getvalue(0, 2)
+    when :latest_tab_outfit_details
+      outfit_id = res.getvalue(0, 0)
+      love_count = res.getvalue(0, 1)
+      moderated_at = res.getvalue(0, 2)
       firstname = res.getvalue(0, 3)
       lastname = res.getvalue(0, 4)
-      email = res.getvalue(0, 5)
-      website = res.getvalue(0, 6)
+      personal_website_url = res.getvalue(0, 5)
 
-    puts "Sample name is ****************- #{id}"
-    puts "Sample price is ****************- #{created_date}"
-    puts "Vote count is ****************- #{updated_at}"
-    puts "voting time is ****************- #{firstname}"
-    puts "voting ends at is ****************- #{lastname}"
-      puts "voting ends at is ****************- #{email}"
-      puts "voting ends at is ****************- #{website}"
+      #puts "outfit id is ****************- #{firstname}"
+      #puts "love count is ****************- #{lastname}"
+      #puts "moderated at is ****************- #{personal_website_url}"
+      #puts "first name is ****************- #{firstname}"
+      #puts "last name is ****************- #{lastname}"
+      #puts "personal website url is ****************- #{personal_website_url}"
+
+      return outfit_id,love_count,moderated_at,firstname, lastname, personal_website_url
     else
       value = res.getvalue(0, 0)
       return value
