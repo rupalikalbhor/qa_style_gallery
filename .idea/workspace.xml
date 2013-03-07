@@ -2,29 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/database_support/database_helper.rb" afterPath="$PROJECT_DIR$/spec/support/database_support/database_helper.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/spec/support/data_helper.rb" afterPath="$PROJECT_DIR$/spec/support/user_data/user_data_helper.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/spec/support/query_helper.rb" afterPath="$PROJECT_DIR$/spec/support/database_support/query_helper.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chromedriver.log" afterPath="$PROJECT_DIR$/chromedriver.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database_support/database_helper.rb" afterPath="$PROJECT_DIR$/database_support/database_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/support/query_helper.rb" afterPath="$PROJECT_DIR$/spec/support/query_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/qa_style_gallery.iml" afterPath="$PROJECT_DIR$/.idea/qa_style_gallery.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/spec_helper.rb" afterPath="$PROJECT_DIR$/spec/spec_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/test_spec.rb" afterPath="$PROJECT_DIR$/spec/test_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="qa_style_gallery.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" time="1362418634370" ignored="false" />
+    <file path="/Dummy.txt" changelist="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" time="1362610071300" ignored="false" />
     <file path="/configuration.rb" changelist="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" time="1362513114742" ignored="false" />
     <file path="/Gemfile" changelist="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" time="1361920960539" ignored="false" />
     <file path="/drivers.rb" changelist="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" time="1361574521344" ignored="false" />
-    <file path="/spec_helper.rb" changelist="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" time="1362513055963" ignored="false" />
+    <file path="/spec_helper.rb" changelist="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" time="1362610482396" ignored="false" />
     <file path="/page_title" changelist="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" time="1361828806041" ignored="false" />
     <file path="/browse_style_gallery_spec.rb" changelist="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" time="1361839195617" ignored="false" />
     <file path="/common_helper.rb" changelist="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" time="1362419494087" ignored="false" />
     <file path="/desk_browse_style_gallery_spec.rb" changelist="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" time="1362428326946" ignored="false" />
     <file path="/tab_browse_style_gallery.rb" changelist="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" time="1362436140314" ignored="false" />
     <file path="/mob_browse_style_gallery_spec.rb" changelist="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" time="1362428581530" ignored="false" />
-    <file path="/test_spec.rb" changelist="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" time="1362593400883" ignored="false" />
+    <file path="/test_spec.rb" changelist="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" time="1362615925826" ignored="false" />
     <file path="/data_helper.rb" changelist="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" time="1362075132442" ignored="false" />
     <file path="/desk_header_spec.rb" changelist="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" time="1362431773015" ignored="false" />
     <file path="/mob_header_spec.rb" changelist="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" time="1362432130399" ignored="false" />
     <file path="/tab_header_spec.rb" changelist="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" time="1362443595035" ignored="false" />
-    <file path="/database_helper.rb" changelist="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" time="1362608311360" ignored="false" />
+    <file path="/database_helper.rb" changelist="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" time="1362616193151" ignored="false" />
     <file path="/query_helper.rb" changelist="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" time="1362608421296" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,20 +51,9 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="database_helper.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/database_support/database_helper.rb">
+        <entry file="file://$PROJECT_DIR$/spec/support/database_support/database_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="35" selection-start="1327" selection-end="1327" vertical-scroll-proportion="0.5480226">
-              <folding>
-                <element signature="e#442#909#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="query_helper.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/support/query_helper.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="143" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
+            <state line="51" column="79" selection-start="1085" selection-end="1085" vertical-scroll-proportion="0.2090909">
               <folding />
             </state>
           </provider>
@@ -68,7 +62,16 @@
       <file leaf-file-name="spec_helper.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="57" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0">
+            <state line="14" column="57" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="query_helper.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/support/database_support/query_helper.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="179" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -77,7 +80,7 @@
       <file leaf-file-name="test_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/test_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="146" selection-start="169" selection-end="310" vertical-scroll-proportion="0.0">
+            <state line="18" column="53" selection-start="671" selection-end="671" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -86,7 +89,16 @@
       <file leaf-file-name="configuration.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/capybara_support/configuration.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="51" selection-start="760" selection-end="760" vertical-scroll-proportion="0.0">
+            <state line="0" column="50" selection-start="26" selection-end="1489" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user_data_helper.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/support/user_data/user_data_helper.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="78" selection-start="409" selection-end="409" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -110,7 +122,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/spec/common_helper.rb" />
         <option value="$PROJECT_DIR$/spec/support/data_helper.rb" />
         <option value="$PROJECT_DIR$/spec/support/user_data/sign_in_user_data.json" />
@@ -121,19 +132,19 @@
         <option value="$PROJECT_DIR$/spec/mobile_site/mob_header_spec.rb" />
         <option value="$PROJECT_DIR$/spec/tablet_site/tab_browse_style_gallery.rb" />
         <option value="$PROJECT_DIR$/spec/tablet_site/tab_header_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
         <option value="$PROJECT_DIR$/capybara_support/configuration.rb" />
-        <option value="$PROJECT_DIR$/spec/test_spec.rb" />
         <option value="$PROJECT_DIR$/spec/support/query_helper.rb" />
         <option value="$PROJECT_DIR$/database_support/database_helper.rb" />
+        <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
+        <option value="$PROJECT_DIR$/spec/test_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/support/database_support/database_helper.rb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="6" />
     <option name="y" value="22" />
-    <option name="width" value="1270" />
-    <option name="height" value="667" />
+    <option name="width" value="1280" />
+    <option name="height" value="686" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -203,6 +214,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="spec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="support" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qa_style_gallery" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qa_style_gallery" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="support" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="database_support" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -234,7 +271,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/spec/support/database_support" />
       <recent name="$PROJECT_DIR$/spec/support" />
+      <recent name="$PROJECT_DIR$/spec/support/user_data" />
     </key>
   </component>
   <component name="RunManager">
@@ -386,14 +425,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="6" y="22" width="1270" height="667" extended-state="0" />
+    <frame x="0" y="22" width="1280" height="686" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28606158" sideWeight="0.31849316" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18218954" sideWeight="0.66952056" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22285251" sideWeight="0.67058825" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -402,7 +442,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -465,72 +504,39 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spec/support/data_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="31" selection-start="352" selection-end="352" vertical-scroll-proportion="0.44117647" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/support/user_data/sign_in_user_data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="16" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/mobile_site/mob_header_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="16" selection-start="195" selection-end="195" vertical-scroll-proportion="0.2591171">
-          <folding />
-        </state>
+        <state line="9" column="16" selection-start="195" selection-end="195" vertical-scroll-proportion="0.2591171" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/tablet_site/tab_browse_style_gallery.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="35" selection-start="146" selection-end="146" vertical-scroll-proportion="0.17274472">
-          <folding />
-        </state>
+        <state line="6" column="35" selection-start="146" selection-end="146" vertical-scroll-proportion="0.17274472" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/desktop_site/desk_browse_style_gallery_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="13" selection-start="1804" selection-end="1804" vertical-scroll-proportion="0.5036765">
-          <folding />
-        </state>
+        <state line="47" column="13" selection-start="1804" selection-end="1804" vertical-scroll-proportion="0.5036765" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/mobile_site/mob_browse_style_gallery_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="16" selection-start="713" selection-end="713" vertical-scroll-proportion="0.5084746">
-          <folding />
-        </state>
+        <state line="18" column="16" selection-start="713" selection-end="713" vertical-scroll-proportion="0.5084746" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/desktop_site/desk_outfit_detail_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="51" selection-start="1188" selection-end="1188" vertical-scroll-proportion="0.7344633">
-          <folding />
-        </state>
+        <state line="26" column="51" selection-start="1188" selection-end="1188" vertical-scroll-proportion="0.7344633" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/desktop_site/desk_header_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="50" selection-start="549" selection-end="549" vertical-scroll-proportion="0.6893382">
-          <folding />
-        </state>
+        <state line="25" column="50" selection-start="549" selection-end="549" vertical-scroll-proportion="0.6893382" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/tablet_site/tab_header_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="19" selection-start="152" selection-end="152" vertical-scroll-proportion="0.22058824">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/support/common_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="236" column="32" selection-start="6911" selection-end="6911" vertical-scroll-proportion="0.40677965">
-          <folding />
-        </state>
+        <state line="8" column="19" selection-start="152" selection-end="152" vertical-scroll-proportion="0.22058824" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
@@ -540,40 +546,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
+    <entry file="file://$PROJECT_DIR$/spec/support/user_data/sign_in_user_data.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="57" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0">
+        <state line="0" column="11" selection-start="11" selection-end="46" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/support/common_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="227" column="17" selection-start="6482" selection-end="6482" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/capybara_support/configuration.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="51" selection-start="760" selection-end="760" vertical-scroll-proportion="0.0">
+        <state line="0" column="50" selection-start="26" selection-end="1489" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/support/database_support/query_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="179" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="57" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/support/user_data/user_data_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="78" selection-start="409" selection-end="409" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/test_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="146" selection-start="169" selection-end="310" vertical-scroll-proportion="0.0">
+        <state line="18" column="53" selection-start="671" selection-end="671" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/support/query_helper.rb">
+    <entry file="file://$PROJECT_DIR$/spec/support/database_support/database_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="143" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
+        <state line="51" column="79" selection-start="1085" selection-end="1085" vertical-scroll-proportion="0.2090909">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database_support/database_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="35" selection-start="1327" selection-end="1327" vertical-scroll-proportion="0.5480226">
-          <folding>
-            <element signature="e#442#909#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>

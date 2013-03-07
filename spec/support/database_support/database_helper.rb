@@ -49,7 +49,7 @@ private
 def query_collection(query_name)
   case query_name
     when :latest_tab_outfit_details
-      sql = "select o.id, o.loves_count, o.moderated_at, ca.firstname, ca.lastname, ca.personal_website_url
+      sql = "select o.id, o.loves_count, age(current_timestamp, o.moderated_at), ca.firstname, ca.lastname, ca.personal_website_url
              FROM outfits o FULL OUTER JOIN cached_accounts ca
              ON o.account_id = ca.id
              WHERE o.state= 'approved' Order by o.moderated_at DESC limit 1"
@@ -75,7 +75,9 @@ def query_collection(query_name)
             WHERE o.state= 'approved'
             AND o.loves_count >=1 and age(o.moderated_at) < '7 days 00:00:00.000000' limit 1"
 
+
     when :most_loved_Today_outfit_details
+
       sql = "select o.id, age(current_timestamp, o.moderated_at), o.loves_count, ca.firstname, ca.lastname, ca.personal_website_url
             FROM outfits o FULL OUTER JOIN cached_accounts ca
             ON o.account_id = ca.id
@@ -113,16 +115,29 @@ def query_result(query_name, res)
 
       #puts "outfit id is ****************- #{firstname}"
       #puts "love count is ****************- #{lastname}"
-      #puts "moderated at is ****************- #{personal_website_url}"
+      puts "moderated at is ****************- #{moderated_at}"
       #puts "first name is ****************- #{firstname}"
       #puts "last name is ****************- #{lastname}"
       #puts "personal website url is ****************- #{personal_website_url}"
 
-      return outfit_id,love_count,moderated_at,firstname, lastname, personal_website_url
+      username = get_username(firstname,lastname)
+      time = get_days_from_moderated_at(moderated_at)
+
+      return outfit_id,love_count,time,username, personal_website_url
     else
       value = res.getvalue(0, 0)
       return value
   end
+end
+
+
+def get_username(firstname,lastname)
+  username = firstname + lastname[0..0]+'.'
+  puts username
+end
+
+def get_days_from_moderated_at(moderated_at)
+  time = moderated_at[0..6]
 end
 
 
