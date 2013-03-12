@@ -3,12 +3,12 @@ require 'spec/spec_helper'
 module CapybaraSupport
   class Configuration
     @default_env = :demo     #This is default environment. If user do not pass any values from command prompt then this environment will be used.
-    @default_device = :desktop_chrome  #This is default device. It user do not pass any value from command prompt then this device will be used.
+    @default_device = :mobile_iphone  #This is default device. It user do not pass any value from command prompt then this device will be used.
 
     #This function will reset the capybara
     def self.reset_capybara
       Capybara.reset!
-      Capybara.default_wait_time=10
+      Capybara.default_wait_time = 50
       Capybara.server_boot_timeout = 30
       Capybara.default_selector =:css
       Capybara.ignore_hidden_elements =false
@@ -32,6 +32,7 @@ module CapybaraSupport
       case $environment
         when :demo
           'http://shopping-ecomm.demo.modcloth.com'
+          #'http://www.modcloth.com'
         when :stage
           'http://www.stage.modcloth.com'
         when :production

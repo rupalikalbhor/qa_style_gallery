@@ -2,7 +2,7 @@ require 'yajl'
 require 'json'
 
 def get_file(filename)
-  File.join(File.dirname(__FILE__), 'user_data', filename)
+  File.join(File.dirname(__FILE__), '', filename)
 end
 
 SignInUserData = get_file('sign_in_user_data.json')

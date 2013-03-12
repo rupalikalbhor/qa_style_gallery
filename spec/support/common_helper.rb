@@ -249,3 +249,13 @@ def join_phone(email_address)
   return email_address
 end
 
+def get_unloved_outfit_id
+  unloved_outfit_id = page.evaluate_script("$('.love-button.unloved').parent().parent().parent().parent().parent().attr('data-id')").to_s
+  return unloved_outfit_id
+end
+
+def get_loved_outfit_id
+  loved_outfit_id = page.evaluate_script("$('.love-button.loved').parent().parent().parent().parent().parent().attr('data-id')").to_s
+  return loved_outfit_id
+end
+

@@ -113,15 +113,15 @@ def query_result(query_name, res)
       lastname = res.getvalue(0, 4)
       personal_website_url = res.getvalue(0, 5)
 
-      #puts "outfit id is ****************- #{firstname}"
-      #puts "love count is ****************- #{lastname}"
-      puts "moderated at is ****************- #{moderated_at}"
-      #puts "first name is ****************- #{firstname}"
-      #puts "last name is ****************- #{lastname}"
-      #puts "personal website url is ****************- #{personal_website_url}"
-
       username = get_username(firstname,lastname)
       time = get_days_from_moderated_at(moderated_at)
+
+      #puts "outfit id is ****************- #{firstname}"
+      #puts "love count is ****************- #{lastname}"
+      #puts "moderated at is ****************- #{moderated_at}"
+      #puts "personal website url is ****************- #{personal_website_url}"
+      #puts "time is ****************- #{time}"
+      #puts "username is ****************- #{username}"
 
       return outfit_id,love_count,time,username, personal_website_url
     else
@@ -133,12 +133,15 @@ end
 
 def get_username(firstname,lastname)
   username = firstname + lastname[0..0]+'.'
-  puts username
+  return username
 end
 
 def get_days_from_moderated_at(moderated_at)
+  if(moderated_at.nil?)
+    time = ''
+  else
   time = moderated_at[0..6]
-end
-
+  end
+ end
 
 
