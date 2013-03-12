@@ -1,5 +1,5 @@
 [0.000][INFO]:      ChromeDriver 26.0.1383.0 /usr/local/bin/chromedriver
-[0.230][FINE]:      Initializing session with capabilities {
+[0.218][FINE]:      Initializing session with capabilities {
    "browserName": "chrome",
    "chrome.detach": true,
    "chromeOptions": {
@@ -14,11 +14,11 @@
    "version": ""
 }
 
-[0.231][INFO]:      Using named testing interface
-[0.805][INFO]:      Connected to Chrome successfully. Version: 25.0.1364.155
-[0.836][FINE]:      Command received (/session/b1d423451c5ef94c64af2d169a294d63)
-[0.836][FINE]:      Command finished (/session/b1d423451c5ef94c64af2d169a294d63) with response {
-   "sessionId": "b1d423451c5ef94c64af2d169a294d63",
+[0.219][INFO]:      Using named testing interface
+[0.894][INFO]:      Connected to Chrome successfully. Version: 25.0.1364.160
+[0.995][FINE]:      Command received (/session/08bf5e9fc43de592f72ea57eb1224482)
+[0.995][FINE]:      Command finished (/session/08bf5e9fc43de592f72ea57eb1224482) with response {
+   "sessionId": "08bf5e9fc43de592f72ea57eb1224482",
    "status": 0,
    "value": {
       "acceptSslCerts": false,
@@ -35,71 +35,185 @@
       "platform": "mac",
       "rotatable": false,
       "takesScreenshot": true,
-      "version": "25.0.1364.155",
+      "version": "25.0.1364.160",
       "webStorageEnabled": true
    }
 }
 
-[0.842][FINE]:      Command received (/session/b1d423451c5ef94c64af2d169a294d63/window/current/maximize) with params {
+[1.001][FINE]:      Command received (/session/08bf5e9fc43de592f72ea57eb1224482/window/current/maximize) with params {
 
 }
 
-[0.843][FINER]:     Waiting for all views to stop loading...
-[0.843][FINER]:     Done waiting for all views to stop loading
-[0.974][FINER]:     Waiting for all views to stop loading...
-[0.978][FINER]:     Done waiting for all views to stop loading
-[0.978][FINE]:      Command finished (/session/b1d423451c5ef94c64af2d169a294d63/window/current/maximize) with response {
-   "sessionId": "b1d423451c5ef94c64af2d169a294d63",
-   "status": 0,
-   "value": {
-
-   }
-}
-
-[0.988][FINE]:      Command received (/session/b1d423451c5ef94c64af2d169a294d63/cookie)
-[0.988][FINER]:     Waiting for all views to stop loading...
-[0.988][FINER]:     Done waiting for all views to stop loading
 [1.001][FINER]:     Waiting for all views to stop loading...
 [1.001][FINER]:     Done waiting for all views to stop loading
-[1.001][FINE]:      Command finished (/session/b1d423451c5ef94c64af2d169a294d63/cookie) with response {
-   "sessionId": "b1d423451c5ef94c64af2d169a294d63",
+[1.129][FINER]:     Waiting for all views to stop loading...
+[1.134][FINER]:     Done waiting for all views to stop loading
+[1.134][FINE]:      Command finished (/session/08bf5e9fc43de592f72ea57eb1224482/window/current/maximize) with response {
+   "sessionId": "08bf5e9fc43de592f72ea57eb1224482",
    "status": 0,
    "value": {
 
    }
 }
 
-[1.003][FINE]:      Command received (/session/b1d423451c5ef94c64af2d169a294d63/url) with params {
+[1.145][FINE]:      Command received (/session/08bf5e9fc43de592f72ea57eb1224482/cookie)
+[1.145][FINER]:     Waiting for all views to stop loading...
+[1.145][FINER]:     Done waiting for all views to stop loading
+[1.165][FINER]:     Waiting for all views to stop loading...
+[1.165][FINER]:     Done waiting for all views to stop loading
+[1.165][FINE]:      Command finished (/session/08bf5e9fc43de592f72ea57eb1224482/cookie) with response {
+   "sessionId": "08bf5e9fc43de592f72ea57eb1224482",
+   "status": 0,
+   "value": {
+
+   }
+}
+
+[1.167][FINE]:      Command received (/session/08bf5e9fc43de592f72ea57eb1224482/url) with params {
    "url": "about:blank"
 }
 
-[1.003][FINER]:     Waiting for all views to stop loading...
-[1.003][FINER]:     Done waiting for all views to stop loading
-[1.017][FINER]:     Waiting for all views to stop loading...
-[1.021][FINER]:     Done waiting for all views to stop loading
-[1.021][FINE]:      Command finished (/session/b1d423451c5ef94c64af2d169a294d63/url) with response {
-   "sessionId": "b1d423451c5ef94c64af2d169a294d63",
+[1.167][FINER]:     Waiting for all views to stop loading...
+[1.167][FINER]:     Done waiting for all views to stop loading
+[1.183][FINER]:     Waiting for all views to stop loading...
+[1.186][FINER]:     Done waiting for all views to stop loading
+[1.186][FINE]:      Command finished (/session/08bf5e9fc43de592f72ea57eb1224482/url) with response {
+   "sessionId": "08bf5e9fc43de592f72ea57eb1224482",
    "status": 0,
    "value": {
 
    }
 }
 
-[1.023][FINE]:      Command received (/session/b1d423451c5ef94c64af2d169a294d63/url) with params {
+[1.189][FINE]:      Command received (/session/08bf5e9fc43de592f72ea57eb1224482/url) with params {
    "url": "http://shopping-ecomm.demo.modcloth.com/style-gallery"
 }
 
-[1.023][FINER]:     Waiting for all views to stop loading...
-[1.043][FINER]:     Done waiting for all views to stop loading
-[8.133][FINER]:     Waiting for all views to stop loading...
-[8.133][FINER]:     Done waiting for all views to stop loading
-[8.133][FINE]:      Command finished (/session/b1d423451c5ef94c64af2d169a294d63/url) with response {
-   "sessionId": "b1d423451c5ef94c64af2d169a294d63",
+[1.189][FINER]:     Waiting for all views to stop loading...
+[1.190][FINER]:     Done waiting for all views to stop loading
+[9.497][FINER]:     Waiting for all views to stop loading...
+[9.503][FINER]:     Done waiting for all views to stop loading
+[9.503][FINE]:      Command finished (/session/08bf5e9fc43de592f72ea57eb1224482/url) with response {
+   "sessionId": "08bf5e9fc43de592f72ea57eb1224482",
    "status": 0,
    "value": {
 
    }
 }
 
-[9.244][FINE]:      Command received (/session/b1d423451c5ef94c64af2d169a294d63)
-[9.443][INFO]:      Chrome shutdown
+[14.558][FINE]:     Command received (/session/08bf5e9fc43de592f72ea57eb1224482/elements) with params {
+   "using": "xpath",
+   "value": ".//*[@id = 'featured']"
+}
+
+[14.558][FINER]:    Waiting for all views to stop loading...
+[14.558][FINER]:    Done waiting for all views to stop loading
+[14.579][FINER]:    Waiting for all views to stop loading...
+[14.579][FINER]:    Done waiting for all views to stop loading
+[14.579][FINE]:     Command finished (/session/08bf5e9fc43de592f72ea57eb1224482/elements) with response {
+   "sessionId": "08bf5e9fc43de592f72ea57eb1224482",
+   "status": 0,
+   "value": [ {
+      "ELEMENT": ":wdc:1363113552888"
+   } ]
+}
+
+[14.587][FINE]:     Command received (/session/08bf5e9fc43de592f72ea57eb1224482/element/:wdc:1363113552888/displayed)
+[14.587][FINER]:    Waiting for all views to stop loading...
+[14.587][FINER]:    Done waiting for all views to stop loading
+[14.607][FINER]:    Waiting for all views to stop loading...
+[14.607][FINER]:    Done waiting for all views to stop loading
+[14.607][FINE]:     Command finished (/session/08bf5e9fc43de592f72ea57eb1224482/element/:wdc:1363113552888/displayed) with response {
+   "sessionId": "08bf5e9fc43de592f72ea57eb1224482",
+   "status": 0,
+   "value": true
+}
+
+[14.608][FINE]:     Command received (/session/08bf5e9fc43de592f72ea57eb1224482/element/:wdc:1363113552888/click) with params {
+
+}
+
+[14.608][FINER]:    Waiting for all views to stop loading...
+[14.609][FINER]:    Done waiting for all views to stop loading
+[14.700][FINER]:    Waiting for all views to stop loading...
+[14.700][FINER]:    Done waiting for all views to stop loading
+[14.700][FINE]:     Command finished (/session/08bf5e9fc43de592f72ea57eb1224482/element/:wdc:1363113552888/click) with response {
+   "sessionId": "08bf5e9fc43de592f72ea57eb1224482",
+   "status": 0,
+   "value": {
+
+   }
+}
+
+[15.285][FINE]:     Command received (/session/08bf5e9fc43de592f72ea57eb1224482/elements) with params {
+   "using": "xpath",
+   "value": "//div[@id = 'gallery']/div/div[1]/a/img[contains(@alt,'Open Outfit Link')]"
+}
+
+[15.285][FINER]:    Waiting for all views to stop loading...
+[15.285][FINER]:    Done waiting for all views to stop loading
+[15.304][FINER]:    Waiting for all views to stop loading...
+[15.305][FINER]:    Done waiting for all views to stop loading
+[15.305][FINE]:     Command finished (/session/08bf5e9fc43de592f72ea57eb1224482/elements) with response {
+   "sessionId": "08bf5e9fc43de592f72ea57eb1224482",
+   "status": 0,
+   "value": [  ]
+}
+
+[15.358][FINE]:     Command received (/session/08bf5e9fc43de592f72ea57eb1224482/elements) with params {
+   "using": "xpath",
+   "value": "//div[@id = 'gallery']/div/div[1]/a/img[contains(@alt,'Open Outfit Link')]"
+}
+
+[15.358][FINER]:    Waiting for all views to stop loading...
+[15.360][FINER]:    Done waiting for all views to stop loading
+[15.365][FINER]:    Waiting for all views to stop loading...
+[15.366][FINER]:    Done waiting for all views to stop loading
+[15.366][FINE]:     Command finished (/session/08bf5e9fc43de592f72ea57eb1224482/elements) with response {
+   "sessionId": "08bf5e9fc43de592f72ea57eb1224482",
+   "status": 0,
+   "value": [ {
+      "ELEMENT": ":wdc:1363113552889"
+   } ]
+}
+
+[15.367][FINE]:     Command received (/session/08bf5e9fc43de592f72ea57eb1224482/element/:wdc:1363113552889/displayed)
+[15.367][FINER]:    Waiting for all views to stop loading...
+[15.368][FINER]:    Done waiting for all views to stop loading
+[15.389][FINER]:    Waiting for all views to stop loading...
+[15.389][FINER]:    Done waiting for all views to stop loading
+[15.389][FINE]:     Command finished (/session/08bf5e9fc43de592f72ea57eb1224482/element/:wdc:1363113552889/displayed) with response {
+   "sessionId": "08bf5e9fc43de592f72ea57eb1224482",
+   "status": 0,
+   "value": true
+}
+
+[15.390][FINE]:     Command received (/session/08bf5e9fc43de592f72ea57eb1224482/element/:wdc:1363113552889/click) with params {
+
+}
+
+[15.390][FINER]:    Waiting for all views to stop loading...
+[15.391][FINER]:    Done waiting for all views to stop loading
+[15.596][FINER]:    Waiting for all views to stop loading...
+[15.596][FINER]:    Done waiting for all views to stop loading
+[15.596][FINE]:     Command finished (/session/08bf5e9fc43de592f72ea57eb1224482/element/:wdc:1363113552889/click) with response {
+   "sessionId": "08bf5e9fc43de592f72ea57eb1224482",
+   "status": 0,
+   "value": {
+
+   }
+}
+
+[20.598][FINE]:     Command received (/session/08bf5e9fc43de592f72ea57eb1224482/url)
+[20.598][FINER]:    Waiting for all views to stop loading...
+[20.598][FINER]:    Done waiting for all views to stop loading
+[20.600][FINER]:    Waiting for all views to stop loading...
+[20.600][FINER]:    Done waiting for all views to stop loading
+[20.600][FINE]:     Command finished (/session/08bf5e9fc43de592f72ea57eb1224482/url) with response {
+   "sessionId": "08bf5e9fc43de592f72ea57eb1224482",
+   "status": 0,
+   "value": "http://shopping-ecomm.demo.modcloth.com/style-gallery/outfits/151"
+}
+
+[20.604][FINE]:     Command received (/session/08bf5e9fc43de592f72ea57eb1224482)
+[20.842][INFO]:     Chrome shutdown

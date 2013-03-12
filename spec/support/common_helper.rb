@@ -249,3 +249,23 @@ def join_phone(email_address)
   return email_address
 end
 
+
+def outfit_detail_desktop(outfit_id,love_count,time,username,personal_website_url)
+  page.find(:xpath, "//div[@id = 'gallery']/div/div[1]/a/img[contains(@alt,'Open Outfit Link')]").click
+  #current_path.should == "/style-gallery/outfits/#{outfit_id}"
+  #$outfitid ="#{outfit_id}"
+  within(:css, ".details.row")   do
+    #page.should have_content("#{username}")
+    page.should have_css(".uploader-name", :text=> "#{username}")      # verify uploader name
+    page.has_css?(".loves-count", :text => "#{love_count}")     # verify love_count
+                                                                       #page.should have_content("#{time}")      #currently it doesnt work, time needs to be fixed in database_helper.rb          # verify time shows up correctly
+    page.should have_css(".love-button.unloved")            # if outfit is not loved by user or user is not signed in
+    page.find(:xpath, "//div[@class= 'user-details']/div/div[1]/div[1]/div[2][contains(@class,'love-button')]")
+    page.find(:xpath, "//div[@class='user-details']/div/span/div[1][contains(@class, 'social-sharing-product')]/a[1][contains(@class, 'pinterest')]")
+    page.find(:xpath, "//div[@class='user-details']/div/span/div[1][contains(@class, 'social-sharing-product')]/a[2][contains(@class, 'twitter')]")
+    page.find(:xpath, "//div[@class='user-details']/div/span/div[1][contains(@class, 'social-sharing-product')]/a[3][contains(@class, 'facebook')]")
+  end
+  page.should have_css("button.close")
+  click_button "x"
+end
+
