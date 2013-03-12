@@ -50,38 +50,38 @@ def query_collection(query_name)
   case query_name
     when :latest_tab_outfit_details
       sql = "select o.id, o.loves_count, age(current_timestamp, o.moderated_at), ca.firstname, ca.lastname, ca.personal_website_url
-             FROM outfits o FULL OUTER JOIN cached_accounts ca
+             FROM outfits o  INNER JOIN cached_accounts ca
              ON o.account_id = ca.id
              WHERE o.state= 'approved' Order by o.moderated_at DESC limit 1"
 
     when :featured_tab_outfit_details
-      sql = "select o.id, o.loves_count, o.moderated_at, ca.firstname, ca.lastname, ca.personal_website_url
-             FROM outfits o FULL OUTER JOIN cached_accounts ca
+      sql = "select o.id, o.loves_count, age(current_timestamp, o.moderated_at), ca.firstname, ca.lastname, ca.personal_website_url
+             FROM outfits o  INNER JOIN cached_accounts ca
              ON o.account_id = ca.id
-             WHERE o.state= 'approved'
-             AND o.featured = 't' Order by o.moderated_at DESC limit 1"
+            WHERE o.state= 'approved' AND o.featured = 't' Order by o.moderated_at DESC limit 1"
 
     when :most_loved_All_time_tab_outfit_details
-      sql = "select o.id, o.loves_count, o.moderated_at, ca.firstname, ca.lastname, ca.personal_website_url
-             FROM outfits o FULL OUTER JOIN cached_accounts ca
+      sql = "select o.id, o.loves_count, age(current_timestamp, o.moderated_at), ca.firstname, ca.lastname, ca.personal_website_url
+             FROM outfits o  INNER JOIN cached_accounts ca
              ON o.account_id = ca.id
              WHERE o.state= 'approved'
              Order by o.loves_count DESC, o.moderated_at DESC limit 1"
 
     when :most_loved_This_week_outfit_details
-      sql = "select o.id, age(current_timestamp, o.moderated_at), o.loves_count, ca.firstname, ca.lastname, ca.personal_website_url
-            FROM outfits o FULL OUTER JOIN cached_accounts ca
-            ON o.account_id = ca.id
-            WHERE o.state= 'approved'
-            AND o.loves_count >=1 and age(o.moderated_at) < '7 days 00:00:00.000000' limit 1"
+      sql = "select o.id, o.loves_count, age(current_timestamp, o.moderated_at), ca.firstname, ca.lastname, ca.personal_website_url
+             FROM outfits o  INNER JOIN cached_accounts ca
+             ON o.account_id = ca.id
+             WHERE o.state= 'approved'
+             AND o.loves_count >=1 and age(o.moderated_at) < '7 days 00:00:00.000000' limit 1"
 
 
     when :most_loved_Today_outfit_details
 
-      sql = "select o.id, age(current_timestamp, o.moderated_at), o.loves_count, ca.firstname, ca.lastname, ca.personal_website_url
-            FROM outfits o FULL OUTER JOIN cached_accounts ca
-            ON o.account_id = ca.id
-            WHERE o.loves_count >=1 and age(current_timestamp, o.moderated_at) < '24:00:00.000000'"
+      sql = "select o.id, o.loves_count, age(current_timestamp, o.moderated_at), ca.firstname, ca.lastname, ca.personal_website_url
+             FROM outfits o  INNER JOIN cached_accounts ca
+             ON o.account_id = ca.id
+             WHERE o.state= 'approved'
+             AND  o.loves_count >=1 and age(current_timestamp, o.moderated_at) < '24:00:00.000000'"
 
     #when :UserDetails
     #  sql = "select o.id, o.loves_count, o.moderated_at, ca.firstname, ca.lastname, ca.personal_website_url
@@ -103,25 +103,28 @@ def query_collection(query_name)
 end
 
 private
-def query_result(query_name, res)
-  case query_name
-    when :latest_tab_outfit_details
+def query_result(query_name, res)   # we can use if instead of case and in query return a different result for userdetails and product_detail
+
+  if query_name == (:latest_tab_outfit_details || :featured_tab_outfit_details ||:most_loved_All_time_tab_outfit_details || :most_loved_This_week_outfit_details || :most_loved_Today_outfit_details)
       outfit_id = res.getvalue(0, 0)
       love_count = res.getvalue(0, 1)
       moderated_at = res.getvalue(0, 2)
       firstname = res.getvalue(0, 3)
       lastname = res.getvalue(0, 4)
       personal_website_url = res.getvalue(0, 5)
-
-      username = get_username(firstname,lastname)
-      time = get_days_from_moderated_at(moderated_at)
+    username = get_username(firstname,lastname)
+  time = get_days_from_moderated_at(moderated_at)
+  return outfit_id,love_count,time,username, personal_website_url
 
       #puts "outfit id is ****************- #{firstname}"
       #puts "love count is ****************- #{lastname}"
-      #puts "moderated at is ****************- #{moderated_at}"
+      puts "moderated at is ****************- #{moderated_at}"
+      #puts "first name is ****************- #{firstname}"
+      #puts "last name is ****************- #{lastname}"
       #puts "personal website url is ****************- #{personal_website_url}"
-      #puts "time is ****************- #{time}"
-      #puts "username is ****************- #{username}"
+
+      username = get_username(firstname,lastname)
+      time = get_days_from_moderated_at(moderated_at)
 
       return outfit_id,love_count,time,username, personal_website_url
     else

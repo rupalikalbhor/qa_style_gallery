@@ -8,6 +8,7 @@ require 'support/common_helper'
 require 'support/user_data/user_data_helper'
 require 'support/database_support/database_helper'
 
+
 RSpec.configure do |config|
   config.before(:all) do
     CapybaraSupport::Configuration.reset_capybara

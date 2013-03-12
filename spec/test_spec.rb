@@ -38,11 +38,13 @@ describe 'Quick Look' do
       page.find(:xpath, "//div[@data-id ="+outfit_id+"]/a/img[contains(@alt,'Open Outfit Link "+outfit_id+"')]")
     end
 
-    it 'should display correct love count' do
-      expected_love_count = page.find(:xpath, "//div[@data-id ="+outfit_id+"]/div/div[@class='right']/div[@class = 'bb-love-button gallery-view']/div/div[@class = 'loves-count']").text
-      actual_love_count = love_count
-      expected_love_count.should == actual_love_count
-    end
+    puts "outfit id is ****************- #{outfit_id}"
+    puts "love count is ****************- #{love_count}"
+    puts "moderated at is ****************- #{moderated_at}"
+    #puts "first name is ****************- #{firstname}"
+    #puts "last name is ****************- #{lastname}"
+    puts "personal website url is ****************- #{personal_website_url}"
+     puts username
 
     it 'should display username' do
       expected_username = page.find(:xpath, "//div[@data-id ="+outfit_id+"]/div/div[@class='left']/strong").text
