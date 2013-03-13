@@ -31,8 +31,8 @@ module CapybaraSupport
     def self.get_environment_url
       case $environment
         when :demo
-          #'http://shopping-ecomm.demo.modcloth.com'
-          'http://community.demo.modcloth.com'
+          'http://shopping-ecomm.demo.modcloth.com'
+          #'http://community.demo.modcloth.com'
         when :stage
           'http://www.stage.modcloth.com'
         when :production

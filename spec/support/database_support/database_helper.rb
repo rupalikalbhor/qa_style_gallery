@@ -114,13 +114,9 @@ def query_result(query_name, res) # we can use if instead of case and in query r
     email = res.getvalue(0, 5)
     personal_website_url = res.getvalue(0, 6)
 
-    #username = get_username(firstname, lastname)
-    #time = get_days_from_moderated_at(moderated_at)
-    #return outfit_id, love_count, time, username, personal_website_url
-
-    puts "outfit id is ****************- #{outfit_id}"
+    #puts "outfit id is ****************- #{outfit_id}"
     #puts "love count is ****************- #{lastname}"
-    puts "moderated at is ****************- #{moderated_at}"
+    #puts "moderated at is ****************- #{moderated_at}"
     #puts "first name is ****************- #{firstname}"
     #puts "last name is ****************- #{lastname}"
     #puts "personal website url is ****************- #{personal_website_url}"
@@ -140,11 +136,11 @@ def get_username(firstname, lastname, email)
   if(firstname == '' && lastname == '')
     username = get_short_name(email)
   elsif (firstname == '' && lastname != '')
-    username = get_short_name(email) + lastname[0..0]+'.'
+    username = get_short_name(email) + ' ' + lastname[0..0]+'.'
   elsif (lastname == '' && firstname != '')
     username = firstname
   elsif (firstname != '' && lastname != '')
-    username = firstname + lastname[0..0]+'.'
+    username = firstname + ' ' + lastname[0..0]+'.'
   end
   return username
 end
