@@ -42,6 +42,7 @@ describe 'Browse style gallery on desktop' do
     it 'should go on clicked filter.' do
       page.find('#loved').click #user is directed to most loved on clicking most loved
       page.should have_css("a#loved.active")
+      current_path.should == "/style-gallery/loved/all"
     end
   end
 

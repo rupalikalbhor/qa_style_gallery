@@ -262,7 +262,7 @@ end
 
 def outfit_detail_desktop(outfit_id,love_count,time,username,personal_website_url)
   page.find(:xpath, "//div[@id = 'gallery']/div/div[1]/a/img[contains(@alt,'Open Outfit Link')]").click
-  #current_path.should == "/style-gallery/outfits/#{outfit_id}"
+  current_path.should == "/style-gallery/outfits/#{outfit_id}"
   #$outfitid ="#{outfit_id}"
   within(:css, ".details.row")   do
     #page.should have_content("#{username}")
