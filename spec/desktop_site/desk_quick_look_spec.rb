@@ -19,9 +19,7 @@ describe 'Quick Look' do
 
     it 'should display username' do
       actual_username = page.find(:xpath, "//div[@data-id ="+outfit_id+"]/div/div[@class='left']/strong").text
-      puts "Actual is: #{actual_username}"
       expected_username = username
-
       expected_username.should == actual_username
     end
 

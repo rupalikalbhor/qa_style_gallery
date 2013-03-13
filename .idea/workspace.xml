@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chromedriver.log" afterPath="$PROJECT_DIR$/chromedriver.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/capybara_support/configuration.rb" afterPath="$PROJECT_DIR$/capybara_support/configuration.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/support/database_support/database_helper.rb" afterPath="$PROJECT_DIR$/spec/support/database_support/database_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/desktop_site/desk_quick_look_spec.rb" afterPath="$PROJECT_DIR$/spec/desktop_site/desk_quick_look_spec.rb" />
     </list>
     <ignored path="qa_style_gallery.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,19 +47,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="desk_quick_look_spec.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="desk_quick_look_spec.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/desktop_site/desk_quick_look_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="66" selection-start="1048" selection-end="1048" vertical-scroll-proportion="0.0">
+            <state line="32" column="43" selection-start="1288" selection-end="1288" vertical-scroll-proportion="0.8727273">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database_helper.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="database_helper.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/support/database_support/database_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="115" column="0" selection-start="4128" selection-end="4128" vertical-scroll-proportion="-0.009090909">
+            <state line="146" column="115" selection-start="5152" selection-end="5152" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -114,9 +114,9 @@
         <option value="$PROJECT_DIR$/spec/support/user_data/sign_in_user_data.json" />
         <option value="$PROJECT_DIR$/spec/support/common_helper.rb" />
         <option value="$PROJECT_DIR$/spec/test_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/desktop_site/desk_quick_look_spec.rb" />
         <option value="$PROJECT_DIR$/capybara_support/configuration.rb" />
         <option value="$PROJECT_DIR$/spec/support/database_support/database_helper.rb" />
+        <option value="$PROJECT_DIR$/spec/desktop_site/desk_quick_look_spec.rb" />
       </list>
     </option>
   </component>
@@ -605,13 +605,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/desktop_site/desk_quick_look_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="66" selection-start="1048" selection-end="1048" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/capybara_support/configuration.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="11" selection-start="1483" selection-end="1483" vertical-scroll-proportion="0.0">
@@ -621,7 +614,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/support/database_support/database_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="115" column="0" selection-start="4128" selection-end="4128" vertical-scroll-proportion="-0.009090909">
+        <state line="146" column="115" selection-start="5152" selection-end="5152" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/desktop_site/desk_quick_look_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="43" selection-start="1288" selection-end="1288" vertical-scroll-proportion="0.8727273">
           <folding />
         </state>
       </provider>

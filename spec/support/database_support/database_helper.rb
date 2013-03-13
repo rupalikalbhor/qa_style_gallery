@@ -134,9 +134,9 @@ end
 
 def get_username(firstname, lastname, email)
   if(firstname == '' && lastname == '')
-    username = get_short_name(email)
+    username = get_name(email)
   elsif (firstname == '' && lastname != '')
-    username = get_short_name(email) + ' ' + lastname[0..0]+'.'
+    username = get_name(email) + ' ' + lastname[0..0]+'.'
   elsif (lastname == '' && firstname != '')
     username = firstname
   elsif (firstname != '' && lastname != '')
@@ -153,7 +153,7 @@ def get_days_from_moderated_at(moderated_at)
   end
 end
 
-def get_short_name(email)
+def get_name(email)
   short_name = email.match(/([\S]+)@/)[1]
   if (short_name.length > 15)
     short_name = "#{short_name[0..14]}..."
