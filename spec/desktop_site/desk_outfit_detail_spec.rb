@@ -10,27 +10,32 @@ describe 'Browse style gallery' do
 
 
 
-  #it "Verify outfit detail on latest tab "do
-  #  outfit_id,love_count,time,username,personal_website_url = connection(:query_name => :latest_tab_outfit_details)
-  #  outfit_detail_desktop(outfit_id,love_count,time,username,personal_website_url)
-  #  end
+  it "Verify outfit detail on latest tab "do
+    outfit_id,love_count,time,username,personal_website_url = connection(:query_name => :latest_tab_outfit_details)
+    outfit_detail_desktop(outfit_id,love_count,time,username,personal_website_url)
+    end
 
   it "Verify outfit detail on featured tab "do
     page.find('#featured').click
     outfit_id,love_count,time,username,personal_website_url = connection(:query_name => :featured_tab_outfit_details)
     outfit_detail_desktop(outfit_id,love_count,time,username,personal_website_url)
   end
-  #
-  ##it "Verify outfit detail on most loved tab" do
-  ##  page.find('#loved').click
-  ##  # if user clicks on most loved by default 'this week' loads up
-  ##  outfit_id,love_count,time,username,personal_website_url = connection(:query_name => :most_loved_This_week_outfit_details)
-  ##  outfit_detail_desktop(outfit_id,love_count,time,username,personal_website_url)
-  #
-  #
-  #
-  #
-  #end
+
+  it "Verify outfit detail on most loved tab" do
+    page.find('#loved').click
+    # if user clicks on most loved by default 'this week' loads up
+    wait_for_script
+    outfit_id,love_count,time,username,personal_website_url = connection(:query_name => :most_loved_This_week_outfit_details)
+    outfit_detail_desktop(outfit_id,love_count,time,username,personal_website_url)
+  end
+
+  it "Verify outfit detail on most loved all tab" do
+    page.find('#loved').click
+    page.find('#all').click
+    # if user clicks on most loved by default 'this week' loads up
+    outfit_id,love_count,time,username,personal_website_url = connection(:query_name => :most_loved_All_time_tab_outfit_details)
+    outfit_detail_desktop(outfit_id,love_count,time,username,personal_website_url)
+  end
 
 
       #page.should have_xpath("//p[contains(@class,'date-added')]")

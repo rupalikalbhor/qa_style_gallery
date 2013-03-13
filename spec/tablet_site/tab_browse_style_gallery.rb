@@ -40,6 +40,11 @@ describe 'Browse style gallery on tablet' do
       page.find(:xpath, "//div[@id = 'gallery']/div/div[1]/a/img[contains(@alt,'Open Outfit Link')]")
     end
 
+    it 'should go on all time loved' do
+      page.find('#all').click
+
+    end
+
     it 'should go on clicked filter.' do
       page.find('#loved').click #user is directed to most loved on clicking most loved
       page.should have_css("a#loved.active")

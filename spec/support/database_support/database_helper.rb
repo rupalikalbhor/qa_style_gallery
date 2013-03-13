@@ -68,11 +68,11 @@ def query_collection(query_name)
              Order by o.loves_count DESC, o.moderated_at DESC limit 1"
 
     when :most_loved_This_week_outfit_details
-      sql = "select o.id, o.loves_count, age(current_timestamp, o.moderated_at), ca.firstname, ca.lastname, ca.personal_website_url
+      sql = " select o.id, o.loves_count, age(current_timestamp, o.moderated_at), ca.firstname, ca.lastname, ca.personal_website_url
              FROM outfits o  INNER JOIN cached_accounts ca
              ON o.account_id = ca.id
              WHERE o.state= 'approved'
-             AND o.loves_count >=1 and age(o.moderated_at) < '7 days 00:00:00.000000' limit 1"
+            and age(o.moderated_at) < '7 days 00:00:00.000000' Order by loves_count DESC limit 1"
 
 
     when :most_loved_Today_outfit_details
@@ -81,7 +81,7 @@ def query_collection(query_name)
              FROM outfits o  INNER JOIN cached_accounts ca
              ON o.account_id = ca.id
              WHERE o.state= 'approved'
-             AND  o.loves_count >=1 and age(current_timestamp, o.moderated_at) < '24:00:00.000000'"
+            age(current_timestamp, o.moderated_at) < '24:00:00.000000' Order by loves_count DESC limit 1"
 
     #when :UserDetails
     #  sql = "select o.id, o.loves_count, o.moderated_at, ca.firstname, ca.lastname, ca.personal_website_url
@@ -124,7 +124,7 @@ def query_result(query_name, res) # we can use if instead of case and in query r
     username = get_username(firstname, lastname, email)
     time = get_days_from_moderated_at(moderated_at)
 
-    return outfit_id, love_count, time, username, personal_website_url
+    return outfit_id, love_count, time, username, email, personal_website_url
   else
     value = res.getvalue(0, 0)
     return value
