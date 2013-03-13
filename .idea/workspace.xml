@@ -2,21 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/desktop_site/desk_quick_look_spec.rb" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/support/database_support/query_helper.rb" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chromedriver.log" afterPath="$PROJECT_DIR$/chromedriver.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/support/common_helper.rb" afterPath="$PROJECT_DIR$/spec/support/common_helper.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/capybara_support/configuration.rb" afterPath="$PROJECT_DIR$/capybara_support/configuration.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/support/database_support/database_helper.rb" afterPath="$PROJECT_DIR$/spec/support/database_support/database_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/qa_style_gallery.iml" afterPath="$PROJECT_DIR$/.idea/qa_style_gallery.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/support/database_support/query_helper.rb" afterPath="$PROJECT_DIR$/spec/support/database_support/query_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/support/user_data/sign_in_user_data.json" afterPath="$PROJECT_DIR$/spec/support/user_data/sign_in_user_data.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/test_spec.rb" afterPath="$PROJECT_DIR$/spec/test_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/support/user_data/user_data_helper.rb" afterPath="$PROJECT_DIR$/spec/support/user_data/user_data_helper.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="qa_style_gallery.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" time="1362682311456" ignored="false" />
-    <file path="/configuration.rb" changelist="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" time="1363113679406" ignored="false" />
+    <file path="/Dummy.txt" changelist="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" time="1363124400567" ignored="false" />
+    <file path="/configuration.rb" changelist="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" time="1363203052269" ignored="false" />
     <file path="/Gemfile" changelist="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" time="1361920960539" ignored="false" />
     <file path="/drivers.rb" changelist="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" time="1361574521344" ignored="false" />
     <file path="/spec_helper.rb" changelist="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" time="1362610482396" ignored="false" />
@@ -31,9 +28,10 @@
     <file path="/desk_header_spec.rb" changelist="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" time="1362431773015" ignored="false" />
     <file path="/mob_header_spec.rb" changelist="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" time="1362432130399" ignored="false" />
     <file path="/tab_header_spec.rb" changelist="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" time="1362443595035" ignored="false" />
-    <file path="/database_helper.rb" changelist="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" time="1362788487181" ignored="false" />
+    <file path="/database_helper.rb" changelist="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" time="1363204040507" ignored="false" />
     <file path="/query_helper.rb" changelist="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" time="1362608421296" ignored="false" />
     <file path="/user_data_helper.rb" changelist="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" time="1363108666640" ignored="false" />
+    <file path="/desk_quick_look_spec.rb" changelist="ff34e7f1-c571-4e14-bb2e-c4d19d9659dc" time="1363202970280" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,46 +51,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="spec_helper.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
+      <file leaf-file-name="desk_quick_look_spec.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/desktop_site/desk_quick_look_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="86" selection-start="543" selection-end="543" vertical-scroll-proportion="0.4722222">
+            <state line="25" column="66" selection-start="1048" selection-end="1048" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/test_spec.rb">
+      <file leaf-file-name="database_helper.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spec/support/database_support/database_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="108" column="82" selection-start="5196" selection-end="5196" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user_data_helper.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/support/user_data/user_data_helper.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="18" selection-start="405" selection-end="405" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sign_in_user_data.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/support/user_data/sign_in_user_data.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="10" selection-start="10" selection-end="10" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common_helper.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/support/common_helper.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="245" column="37" selection-start="7305" selection-end="7305" vertical-scroll-proportion="0.0">
+            <state line="149" column="19" selection-start="5325" selection-end="5325" vertical-scroll-proportion="0.45454547">
               <folding />
             </state>
           </provider>
@@ -101,16 +72,16 @@
       <file leaf-file-name="configuration.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/capybara_support/configuration.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="35" selection-start="1295" selection-end="1295" vertical-scroll-proportion="0.0">
+            <state line="33" column="11" selection-start="1431" selection-end="1431" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="desk_browse_style_gallery_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/desktop_site/desk_browse_style_gallery_spec.rb">
+      <file leaf-file-name="common_helper.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/support/common_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="27" selection-start="1602" selection-end="1602" vertical-scroll-proportion="0.0">
+            <state line="13" column="25" selection-start="260" selection-end="260" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -134,7 +105,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/spec/desktop_site/desk_browse_style_gallery_spec.rb" />
         <option value="$PROJECT_DIR$/spec/mobile_site/mob_browse_style_gallery_spec.rb" />
         <option value="$PROJECT_DIR$/spec/desktop_site/desk_header_spec.rb" />
         <option value="$PROJECT_DIR$/spec/mobile_site/mob_header_spec.rb" />
@@ -144,17 +114,18 @@
         <option value="$PROJECT_DIR$/database_support/database_helper.rb" />
         <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
         <option value="$PROJECT_DIR$/spec/support/database_support/query_helper.rb" />
-        <option value="$PROJECT_DIR$/spec/support/database_support/database_helper.rb" />
         <option value="$PROJECT_DIR$/spec/support/user_data/user_data_helper.rb" />
         <option value="$PROJECT_DIR$/spec/support/user_data/sign_in_user_data.json" />
         <option value="$PROJECT_DIR$/spec/support/common_helper.rb" />
         <option value="$PROJECT_DIR$/spec/test_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/desktop_site/desk_quick_look_spec.rb" />
         <option value="$PROJECT_DIR$/capybara_support/configuration.rb" />
+        <option value="$PROJECT_DIR$/spec/support/database_support/database_helper.rb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="34" />
+    <option name="x" value="3" />
     <option name="y" value="22" />
     <option name="width" value="1280" />
     <option name="height" value="686" />
@@ -255,6 +226,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="user_data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qa_style_gallery" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qa_style_gallery" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="support" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database_support" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -456,14 +449,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="34" y="22" width="1280" height="686" extended-state="1" />
+    <frame x="3" y="22" width="1280" height="686" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994923" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28606158" sideWeight="0.31849316" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22690438" sideWeight="0.67058825" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23095624" sideWeight="0.67058825" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -550,11 +543,6 @@
         <state line="18" column="16" selection-start="713" selection-end="713" vertical-scroll-proportion="0.5084746" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/desktop_site/desk_outfit_detail_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="51" selection-start="1188" selection-end="1188" vertical-scroll-proportion="0.7344633" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/desktop_site/desk_header_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="50" selection-start="549" selection-end="549" vertical-scroll-proportion="0.6893382" />
@@ -572,37 +560,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/support/database_support/query_helper.rb">
+    <entry file="file://$PROJECT_DIR$/spec/support/user_data/user_data_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/support/database_support/database_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="143" column="91" selection-start="4630" selection-end="4630" vertical-scroll-proportion="4.0417457">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/support/common_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="245" column="37" selection-start="7305" selection-end="7305" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/capybara_support/configuration.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="35" selection-start="1295" selection-end="1295" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/desktop_site/desk_browse_style_gallery_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="27" selection-start="1602" selection-end="1602" vertical-scroll-proportion="0.0">
+        <state line="19" column="18" selection-start="405" selection-end="405" vertical-scroll-proportion="0.5277778">
           <folding />
         </state>
       </provider>
@@ -614,23 +574,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/test_spec.rb">
+    <entry file="file://$PROJECT_DIR$/spec/desktop_site/desk_outfit_detail_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="82" selection-start="5196" selection-end="5196" vertical-scroll-proportion="0.0">
+        <state line="26" column="51" selection-start="885" selection-end="885" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/support/user_data/user_data_helper.rb">
+    <entry file="file://$PROJECT_DIR$/spec/desktop_site/desk_browse_style_gallery_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="18" selection-start="405" selection-end="405" vertical-scroll-proportion="0.0">
+        <state line="58" column="4" selection-start="2204" selection-end="2204" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/test_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="702" selection-end="702" vertical-scroll-proportion="0.6388889">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="86" selection-start="543" selection-end="543" vertical-scroll-proportion="0.4722222">
+        <state line="18" column="36" selection-start="544" selection-end="544" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/support/common_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="25" selection-start="260" selection-end="260" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/capybara_support/configuration.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="11" selection-start="1431" selection-end="1431" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/desktop_site/desk_quick_look_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="66" selection-start="1048" selection-end="1048" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/support/database_support/database_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="149" column="19" selection-start="5325" selection-end="5325" vertical-scroll-proportion="0.45454547">
           <folding />
         </state>
       </provider>
